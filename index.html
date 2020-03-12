@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Formulario de registro de usuarios </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ab5b4b1c48.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="medio">
+            <div class="interno">
+                <div class="form">
+                    <small id="errorMessage"></small><br>
+                    <small id="errorMessage2"></small><br>
+                    <small id="successful"></small><br>
+                    <form name="formOne" onsubmit="return validateForm()">
+                        <p class="parrafo1"> Ingrese e-mail y contraseña </p>
+                        <input type="text" class="email" id="marginEmail" name="emailAddress" placeholder="&#xf0e0;  e-mail"><br>
+                        <input type="password" class="password" id="passwd" name="clave" placeholder="&#xf023;  contraseña"><br>
+                        <a href="#" class="button blue medium radius" onclick="validateForm()"> Enviar </a>
+                        <span class="logincorrecto"></span><br>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"> Manterme conectado </label>
+                    </form>
+                    <h1 id="title"> Starts Wars API Demo </h1>
+                    <div class="info-container">
+                        <button type="button" id="boton" name="boton"> Encontrar </button>
+                    </div>
+                </div>
+                <!--aqui cierro el div form-->
+            </div>
+            <!--aqui cierro el div interno-->
+        </div>
+        <!--aqui cierro el div medio-->
+    </div>
+    <!--aqui cierro el div contenedor-->
+    <script src="js/mijavascript.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
